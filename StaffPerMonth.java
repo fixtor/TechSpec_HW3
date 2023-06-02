@@ -1,4 +1,4 @@
-public class StaffPerMonth extends Staff implements Comparable<Staff>{ //Единица с зарплатой в месяц
+public class StaffPerMonth extends Staff{ //Единица с зарплатой в месяц
 	public StaffPerMonth(int id, String name, int age, double salaryPerMonth, double salaryPerHour) {
 		super(id, name, age, salaryPerMonth, salaryPerHour); //При условии, что почасовая оплата
 	}
@@ -23,6 +23,6 @@ public class StaffPerMonth extends Staff implements Comparable<Staff>{ //Еди�
 
 	@Override
 	public int compareTo(Staff otherStaff) {
-		return Integer.compare(this.id, otherStaff.id);
+		return Integer.compare(this.getId(), otherStaff.getId());
 	}
 }
