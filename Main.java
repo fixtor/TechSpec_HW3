@@ -31,7 +31,7 @@ public class Main {
 		staffList.add(new StaffPerHour(3, "Natalia", 32, 0, 450));
 
 		Collections.sort(staffList);
-
+		System.out.println("Sorted by id: ");
 		for (Staff item : staffList) {
             System.out.println(item.getId() + " " + item.name);
 		} // Теперь сортирует по ID. Можно конечно сделать и компаратор.
